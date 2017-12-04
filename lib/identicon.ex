@@ -13,10 +13,8 @@ defmodule Identicon do
     pixel_map = Enum.map grid, fn({ _code, index}) ->
       horizontal = rem(index, 5) * 50
       vertical = div(index, 5) * 50  
-
       top_left = {horizontal, vertical}
       buttom_right = {horizontal+50 , vertical + 50}
-
       {top_left, buttom_right}
     end
 
