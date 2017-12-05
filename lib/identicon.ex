@@ -12,7 +12,7 @@ defmodule Identicon do
   end
 
   def save_image(image, input) do
-    File.write("#{input}.jpg", image)
+    File.write("#{input}.png", image)
   end
 
   def draw_image(%Identicon.Image{color: color, pixel_map: pixel_map}) do
@@ -27,7 +27,7 @@ defmodule Identicon do
   end
 
   def build_pixel_map(%Identicon.Image{grid: grid} = image) do
-    pixel_map = Enum.map grid, fn({ _code, index}) ->
+    pixel_map = Enum.map grid, fn({_code, index}) ->
       horizontal = rem(index, 5) * 50
       vertical = div(index, 5) * 50  
 
