@@ -19,7 +19,6 @@ Follow these staps
     ```
     
 5 - Excute this command on the iex terminal
-    
     ```
     Identicon.main("asdf")
     ```
