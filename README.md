@@ -10,17 +10,17 @@ Follow these staps
 
 2 - Entre the project folder
 
-3 - ```Shell
+3 - ```
     mix deps.get 
     ```
 
-4 - ```Shell
+4 - ```
     iex -S mix 
     ```
     
 5 - Excute this command on the iex terminal
     
-    ```Shell
+    ```
     Identicon.main("asdf")
     ```
 
